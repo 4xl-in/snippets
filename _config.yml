@@ -67,8 +67,8 @@ feed:
 # or "master" otherwise
 safe: False
 lsi: False
-username: jekyllt
-repo: jasper2
+username: 4xl-in
+repo: snippets
 branch: master
 relative_source: ../snippets/
 destination: ../snippets/
