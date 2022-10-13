@@ -6,7 +6,7 @@ language: 'en-uk'
 words_per_minute: 200
 
 # edit baseurl to simply '/' if using as your personal page (instead of a project page)
-baseurl: /
+baseurl:
 
 # Website info
 title: Ghost
@@ -30,7 +30,7 @@ disqus: False
 disqus_shortname: jekyllt # replace with your disqus username
 
 # Google Analytics
-google_analytics:  # replace with your GA tracking identifier
+google_analytics: # replace with your GA tracking identifier
 
 # Permalinks
 permalink: /:title
@@ -71,9 +71,9 @@ username: 4xl-in
 repo: snippets
 branch: master
 relative_source: ../snippets/
-destination: ../snippets/
-production_url:  https://snippets.4xl.in
-source_url:  https://github.com/4xl-in/snippets/
+destination: ../snippets-pages/
+production_url: https://snippets.4xl.in
+source_url: https://github.com/4xl-in/snippets/
 
 exclude:
   - assets/css
