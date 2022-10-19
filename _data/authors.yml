@@ -74,3 +74,14 @@ martin:
   facebook: False
   twitter: False
   cover: False
+deepak:
+  username: deepak
+  name: Deepak Mahakale
+  location: Pune, India
+  url_full: https://deepakmahakale.in/
+  url: deepakmahakale.in
+  bio: Ruby on Rails developer at Saeloun.
+  picture: assets/images/deepak.png
+  facebook: deepakmahakale1
+  twitter: deepakmahakale
+  cover: assets/images/hannah-cover.jpg

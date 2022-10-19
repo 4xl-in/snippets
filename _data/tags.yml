@@ -14,3 +14,7 @@ getting-started:
   name: getting-started
   description: False
   cover: False
+git:
+  name: git
+  description: A series of git tips.
+  cover: assets/images/speeches.jpg
