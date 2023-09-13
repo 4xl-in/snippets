@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom" >
+  <generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator>
+  <link href="/tag/git/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="/" rel="alternate" type="text/html" />
+  <updated>2023-09-13T20:18:57+00:00</updated>
+  <id>/tag/git/feed.xml</id>
+
+  
+  
+  
+
+  
+    <title type="html">Ghost | </title>
+  
+
+  
+    <subtitle>The professional publishing platform</subtitle>
+  
+
+  
+
+  
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  
+
+  
+  
+
+  
+    <entry>
+      <title type="html">Using git stash with a message</title>
+      <link href="/using-git-stash-with-message" rel="alternate" type="text/html" title="Using git stash with a message" />
+      <published>2022-10-19T10:41:00+00:00</published>
+      <updated>2022-10-19T10:41:00+00:00</updated>
+      <id>/using-git-stash-with-message</id>
+      <content type="html" xml:base="/using-git-stash-with-message">&lt;blockquote&gt;
+  &lt;p&gt;
+    “What's in a name? That which we call a rose by any other name would smell
+    just as sweet.”
+    &lt;cite&gt;— William Shakespeare&lt;/cite&gt;
+  &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Well, sometimes it's necessary.&lt;/p&gt;
+
+&lt;p&gt;
+  As a developer we usually work on different branches or we need to switch 
+  branches.
+  Sometimes we need to abandon some changes.
+&lt;/p&gt;
+&lt;p&gt;
+  That's where &lt;code&gt;git stash&lt;/code&gt; comes in picture.
+  This is how the stash list looks like:
+&lt;/p&gt;
+
+&lt;h2 id=&quot;git-stash-without-message&quot;&gt;
+  Using git stash without message
+&lt;/h2&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-log&quot; data-lang=&quot;log&quot;&gt;$ git shash list
+
+stash@{0}: WIP on feature/1005-integration: 22454f23 Configure devise
+stash@{1}: WIP on feature/1005-integration: 22454f23 Configure devise
+stash@{2}: WIP on feature/1005-integration: 22454f23 Configure devise
+stash@{3}: WIP On feature/1330-js-fix: 947a9c8d Fix js
+stash@{4}: WIP on feature/1126-locale: 197a098d Fix test cases&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;
+  Now the problem is if we have stashed changes multiple times git shows the
+  message from last git commit.
+
+  It's not helpful if we have lots of changes.
+&lt;/p&gt;
+&lt;p&gt;
+  With the current way we will have to check the content using 
+  &lt;code&gt;git show stash@{0}&lt;/code&gt;
+&lt;/p&gt;
+
+&lt;h2 id=&quot;git-stash-with-message&quot;&gt;
+  Using git stash with message
+&lt;/h2&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-log&quot; data-lang=&quot;log&quot;&gt;$ git shash -m &quot;Color theme changes in main.css&quot;
+# OR
+$ git stash save &quot;Color theme changes in main.css&quot;
+
+$ git stash list
+
+stash@{0}: WIP on feature/1005-integration: Color theme changes in main.css
+stash@{1}: WIP on feature/1005-integration: Javascript changes for theme&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+With the current approach we know exactly what a specific stash consists of:</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Deepak Mahakale</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="git" />
+      
+
+      
+        <summary type="html">“What's in a name? That which we call a rose by any other name would smell just as sweet.” — William Shakespeare</summary>
+      
+
+      
+      
+    </entry>
+  
+</feed>
